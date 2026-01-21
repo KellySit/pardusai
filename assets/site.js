@@ -12,7 +12,7 @@ function loadList(jsonFile, listId, searchId) {
             <div class="resource">
               <h3>${item.title}</h3>
               <p>${item.desc}</p>
-              <a href="${item.link}">Read →</a>
+              <a href="${item.link}" target="_blank">View →</a>
             </div>
           `;
         });
@@ -23,10 +23,15 @@ function loadList(jsonFile, listId, searchId) {
       search.addEventListener("input", e => {
         const q = e.target.value.toLowerCase();
         render(
-          data.filter(i =>
-            i.title.toLowerCase().includes(q)
+          data.filter(p =>
+            p.title.toLowerCase().includes(q) ||
+            p.desc.toLowerCase().includes(q)
           )
         );
       });
+    })
+    .catch(err => {
+      document.getElementById(listId).innerText =
+        "Failed to load projects: " + err;
     });
 }
