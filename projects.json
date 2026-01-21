@@ -1,1 +1,12 @@
-
+{
+  {
+  "title": "Covid-19 analysis with countries aggregated data",
+  "desc": "Public PardusAI project analysing Covid-19 patterns in infection spread, mortality rates, and regional variations that shaped one of the most significant global health crises in modern history.",
+  "link": "https://pardusai.org/view/80c946da2ed1aacb1d93067578e79b012ff73861013be60da615a568e45b30aa"
+  },
+  {
+  "title": "Bitcoin analysis (For educational purpose only)",
+  "desc": "This analysis examines 5,612 daily price points spanning July 2010 to January 2026, revealing patterns of extreme volatility, multi-year market cycles, and remarkable long-term appreciation.",
+  "link": "https://pardusai.org/view/298f356d3a2131c702042aa799179272db4a083bd02d169cf38683f12d57de7f"
+  }
+}
